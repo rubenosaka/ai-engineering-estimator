@@ -14,8 +14,8 @@ async def create_estimation(request: EstimationRequest) -> EstimationResponse:
     """Receive a meeting transcription and return a software project estimation."""
     try:
         result = generate_estimation(request.transcription)
-    except LLMServiceError as exc:
-        log.error("estimation_endpoint_error", error=str(exc))
-        raise HTTPException(status_code=500, detail=str(exc))
+    except LLMServiceError:
+        log.error("estimation_endpoint_error")
+        raise HTTPException(status_code=500, detail="Estimation failed") from None
 
     return EstimationResponse(**result)

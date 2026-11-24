@@ -87,6 +87,11 @@ Con el servicio corriendo, accede a la documentacion Swagger UI en:
 - **Swagger UI:** [http://localhost:8000/docs](http://localhost:8000/docs)
 - **ReDoc:** [http://localhost:8000/redoc](http://localhost:8000/redoc)
 
+## Documentacion del curso
+
+- [Enunciado del ejercicio](docs/ejercicio.md): Proyecto 1, estimacion con arquitectura CAG.
+- [Contexto del programa](docs/contexto.md): relacion con el diario del master y con el repositorio `ai-engineering-lidr`.
+
 ---
 
 > Este proyecto forma parte del **Master en AI Engineering** y servira como base para evolucionar hacia una arquitectura RAG con base de datos vectorial en modulos posteriores.
