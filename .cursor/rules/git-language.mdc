@@ -1,0 +1,21 @@
+---
+description: Branch names and commit messages are written in English
+alwaysApply: true
+---
+
+# Git language
+
+Branch names and commit messages are in English.
+
+- Use Conventional Commits. The subject says why the change exists.
+- Do not mention Cursor, agents, or other assistants in the subject, body, or trailers.
+
+```text
+# Bad
+git checkout -b ejercicio
+git commit -m "docs: documenta el enunciado"
+
+# Good
+git checkout -b exercise
+git commit -m "docs: add the exercise brief"
+```
